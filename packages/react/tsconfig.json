@@ -1,0 +1,4 @@
+{
+  "extends": "@isaias-ui/ts-config/react.json",
+  "include": ["src"],
+}
