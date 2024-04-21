@@ -7,13 +7,15 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
-    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint -c eslint.config.js --fix"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@isaias-ui/ts-config": "*",
+    "@isaias-ui/eslint-config": "*",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   }
