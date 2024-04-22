@@ -1,7 +1,14 @@
-export function App() {
+//import './styles/globals.css'
+import "./styles/twbuild.css";
+
+export interface ButtonProps {
+  title: string;
+}
+
+export function Button(props: ButtonProps) {
   return (
-    <h1 className="text-4xl text-ignite500">
-      Hello World
-    </h1>
-  )
+    <button className="bg-ignite700 rounded-md p-4 border-0 text-white font-bold">
+      {props.title}
+    </button>
+  );
 }

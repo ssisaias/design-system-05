@@ -554,17 +554,30 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-4xl {
-  font-size: 2rem;
+.rounded-md {
+  border-radius: 8px;
+}
+
+.border-0 {
+  border-width: 0px;
+}
+
+.bg-ignite700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 95 67 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.text-ignite500 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(0 135 95 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 body {
@@ -578,4 +591,14 @@ body {
     font-weight: 400;
     font-size: 1rem;
   }
+}
+
+.hover\:bg-slate-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-ignite300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 179 126 / var(--tw-bg-opacity));
 }
