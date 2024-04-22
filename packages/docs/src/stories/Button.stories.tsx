@@ -1,18 +1,29 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Button } from "@isaias-ui/react";
-import { Children } from "react";
+import { Button, ButtonProps } from "@isaias-ui/react";
 
 export default {
-  title: 'Button',
+  title: "Button",
   component: Button,
+} as Meta<ButtonProps>;
+
+export const Primary: StoryObj<ButtonProps> = {
   args: {
-    title: 'Enviar'
-  }
-} as Meta
+    variant: "primary",
+    title: "Primary",
+  },
+};
 
-export const Primary: StoryObj = {
-}
+export const Secondary: StoryObj<ButtonProps> = {
+  args: {
+    variant: "secondary",
+    title: "Secondary",
+  },
+};
 
-export const Secondary: StoryObj = {
-
-}
+export const Big: StoryObj<ButtonProps> = {
+  args: {
+    variant: "primary",
+    title: "Big button",
+    size: "large",
+  },
+};
