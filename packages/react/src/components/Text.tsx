@@ -19,6 +19,7 @@ export interface TextProps {
     | "8xl"
     | "9xl";
   as?: ElementType;
+  className?: string;
 }
 
 export function Text(props: TextProps) {
@@ -41,13 +42,13 @@ export function Text(props: TextProps) {
     <>
       {props.as ? (
         <props.as
-          className={`${classSize} font-default leading-base margin-0 text-gray-100`}
+          className={`${classSize} ${props.className} margin-0 font-default leading-base text-gray-100`}
         >
           {props.content}
         </props.as>
       ) : (
         <p
-          className={`${classSize} font-default leading-base margin-0 text-gray-100`}
+          className={`${classSize} ${props.className} margin-0 font-default leading-base text-gray-100`}
         >
           {props.content}
         </p>
