@@ -3,7 +3,7 @@ import "../styles/twbuild.css";
 import { clsx } from "clsx";
 
 export interface TextProps {
-  content: string;
+  content?: string;
   size?:
     | "xxs"
     | "xs"
