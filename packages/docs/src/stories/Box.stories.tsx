@@ -10,7 +10,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        story: 'A wrapper for a <div> that can have an optional text above the children elements'
+        story: 'A wrapper for a &lt;div&gt; that can have an optional text above the children elements'
       }
     }
   }

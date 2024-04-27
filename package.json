@@ -10,6 +10,7 @@
     "turbo": "^1.13.2"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.1.5"
+    "@phosphor-icons/react": "^2.1.5",
+    "@radix-ui/react-checkbox": "^1.0.4"
   }
 }

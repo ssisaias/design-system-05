@@ -2,7 +2,7 @@ import type { StoryObj, Meta } from "@storybook/react";
 import { Box, TextInput, TextInputProps } from "@isaias-ui/react";
 
 export default {
-  title: "Typography/Text Input",
+  title: "Form/Text Input",
   component: TextInput,
 } as Meta<TextInputProps>;
 
@@ -31,7 +31,7 @@ export const InsideBox: StoryObj<TextInputProps> = {
   },
   decorators: [(Story) => {
     return (
-      <Box as={'label'} content={"Email Address"}>
+      <Box as={'label'} content={"Email Address"} className="flex flex-col gap-1">
         {Story()}
       </Box>
     )

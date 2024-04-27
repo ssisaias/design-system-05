@@ -2,7 +2,7 @@ import type { StoryObj, Meta } from "@storybook/react";
 import { Box, TextArea, TextAreaProps } from "@isaias-ui/react";
 
 export default {
-  title: "Typography/Text Area",
+  title: "Form/Text Area",
   component: TextArea,
 } as Meta<TextAreaProps>;
 
