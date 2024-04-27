@@ -596,6 +596,22 @@ video {
   font-size: 2.25rem;
 }
 
+.text-6xl {
+  font-size: 3rem;
+}
+
+.text-7xl {
+  font-size: 4rem;
+}
+
+.text-8xl {
+  font-size: 4.5rem;
+}
+
+.text-9xl {
+  font-size: 6rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
 }
@@ -620,24 +636,12 @@ video {
   font-size: 0.625rem;
 }
 
-.text-6xl {
-  font-size: 3rem;
-}
-
-.text-7xl {
-  font-size: 4rem;
-}
-
-.text-8xl {
-  font-size: 4.5rem;
-}
-
-.text-9xl {
-  font-size: 6rem;
-}
-
 .leading-base {
   line-height: 160%;
+}
+
+.leading-shorter {
+  line-height: 125%;
 }
 
 .text-gray-100 {
