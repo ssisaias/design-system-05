@@ -5,12 +5,12 @@ export default {
   title: "Surfaces/Box",
   component: Box,
   args: {
-    content: 'abc'
-  }
+    content: "abc",
+  },
 } as Meta<BoxProps>;
 
 export const Primary: StoryObj<BoxProps> = {
   args: {
-    content: "primary"
+    content: "primary",
   },
 };
