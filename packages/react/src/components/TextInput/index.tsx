@@ -6,20 +6,20 @@ export interface TextInputProps
 export function TextInput({ prefix, ...props }: TextInputProps) {
   return (
     <div
-      className={`bg-gray-900 px-3 py-3 rounded-sm box-border border-2 border-gray-900 border-solid flex align-baseline
+      className={`box-border flex rounded-sm border-2 border-solid border-gray-900 bg-gray-900 px-3 py-3 align-baseline
       focus-within:border-ignite300
-        has-[input:disabled]:opacity-50 has-[input:disabled]:cursor-not-allowed 
+        has-[input:disabled]:cursor-not-allowed has-[input:disabled]:opacity-50 
       `}
     >
       {!!prefix && (
-        <span className="font-default text-sm text-gray-400 font-regular">
+        <span className="font-default text-sm font-regular text-gray-400">
           {prefix}
         </span>
       )}
       <input
         type="text"
         {...props}
-        className="ont-default text-sm disabled:cursor-not-allowed text-white font-regular bg-transparent border-none w-full focus:outline-0 placeholder-gray-400"
+        className="ont-default w-full border-none bg-transparent text-sm font-regular text-white placeholder-gray-400 focus:outline-0 disabled:cursor-not-allowed"
       />
     </div>
   );
