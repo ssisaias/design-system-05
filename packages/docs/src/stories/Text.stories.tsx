@@ -7,6 +7,14 @@ export default {
   args: {
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ratione aut voluptatem soluta eaque impedit accusamus amet, nostrum perspiciatis obcaecati, natus ex placeat quidem enim minus esse dolor! Voluptates, blanditiis",
   },
+  argTypes: {
+    size: {
+      options: ['xxs','xs','sm','md','lg','xl','2xl','4xl','5xl','6xl','7xl','8xl','9xl'],
+      control: {
+        type: 'select'
+      }
+    }
+  }
 } as Meta<TextProps>;
 
 export const Small: StoryObj<TextProps> = {

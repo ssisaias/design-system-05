@@ -6,6 +6,22 @@ export default {
   component: Button,
   args: {
     label: "Send",
+    variant: "primary",
+    size: "md",
+  },
+  argTypes: {
+    variant: {
+      options: ["primary", "secondary", "tertiary"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    size: {
+      options: ["sm", "md"],
+      control: {
+        type: "inline-radio",
+      },
+    },
   },
 } as Meta<ButtonProps>;
 
