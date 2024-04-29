@@ -21,11 +21,11 @@ jobs:
         node-version: 18.18.0
 
     - name: Install deps
-      run: cd .. && npm i
+      run: npm i
 
     - name: Build
       run: npm run build
-      
+
     - id: build-publish
       uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
       with:
