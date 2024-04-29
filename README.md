@@ -21,10 +21,12 @@ Solution below is no longer necessary with Turbo
 
 Components
 
-- [] Text
-- [] Heading
+- [] Avatar
 - [] Box
 - [] Button
-- [] TextInput
-- [] TextArea
 - [] Checkbox
+- [] Heading
+- [] Multistep
+- [] Text
+- [] Text Area
+- [] Text Input
