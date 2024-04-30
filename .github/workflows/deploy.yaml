@@ -1,0 +1,38 @@
+on:
+  push:
+    branches:
+      - "gh-deploy" # change to the branch you wish to deploy from
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18.18.0
+
+    - name: Install deps
+      run: npm ci
+
+    - name: Build
+      run: npm run build
+
+    - name: Upload to Gh
+      uses: actions/upload-pages-artifact@v3
+      with: 
+        path: packages/docs/storybook-static
+
+    - id: Eeploy
+      name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+      with:
+        token: ${{ github.token }}
