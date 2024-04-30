@@ -19,14 +19,30 @@ Solution below is no longer necessary with Turbo
 > ~~While storybook is running, to view the changes in realtime, we need to run both the react and tailwind commands in separate terminals. For example, for me to see the changes reflect in storybook for a component inside packages/react.~~
 >> ~~Open three terminals, one running ```npm run dev``` from packages/docs, another two terminals each running inside packages/react ```npm run dev``` and the tailwind command above with --watch~~
 
+### Deploy to NPM
+
+Log into npm cli: ```npm login```
+
+To setup the changeset run:
+
+```$npm run changeset```
+
+To generate the version metadata file run:
+
+```$npm run version-packages"```
+
+To deploy to npm run:
+
+```$npm run release```
+
 Components
 
-- [] Avatar
-- [] Box
-- [] Button
-- [] Checkbox
-- [] Heading
-- [] Multistep
-- [] Text
-- [] Text Area
-- [] Text Input
+- Avatar
+- Box
+- Button
+- Checkbox
+- Heading
+- Multistep
+- Text
+- Text Area
+- Text Input
