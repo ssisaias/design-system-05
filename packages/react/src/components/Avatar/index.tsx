@@ -7,7 +7,7 @@ export interface AvatarProps
 
 export function Avatar(props: AvatarProps) {
   return (
-    <AvatarRdx.Root className="rounded-full inline-block w-12 h-12 overflow-hidden">
+    <AvatarRdx.Root className="rounded-full inline-block w-16 h-16 overflow-hidden">
       <AvatarRdx.Image
         {...props}
         className="w-full h-full object-cover rounded-[inherit]"

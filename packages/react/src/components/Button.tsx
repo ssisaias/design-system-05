@@ -25,7 +25,7 @@ export function Button(props: ButtonProps) {
   });
   return (
     <button
-      className={`${variant} ${size} rounded-sm text-sm font-medium font-default text-center min-w-[120px] box-border flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed`}
+      className={`${variant} ${size} rounded-sm text-sm font-medium font-default text-center min-w-[120px] box-border flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed focus:shadow-[0_0_0_2px] focus:text-gray-100`}
       disabled={props.disabled}
     >
       {props.label}

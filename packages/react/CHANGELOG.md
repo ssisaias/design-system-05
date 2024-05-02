@@ -1,5 +1,11 @@
 # @isaias-ui/react
 
+## 1.0.2
+
+### Patch Changes
+
+- Add option to pass reference to text input and adjust styles
+
 ## 1.0.1
 
 ### Major Changes
