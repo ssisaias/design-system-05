@@ -1,5 +1,11 @@
 # @isaias-ui/react
 
+## 1.1.0
+
+### Minor Changes
+
+- Added tooltip component
+
 ## 1.0.2
 
 ### Patch Changes
