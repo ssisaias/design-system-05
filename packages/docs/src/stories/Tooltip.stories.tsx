@@ -8,10 +8,10 @@ export default {
     textContent: "Example",
     tooltipTrigger: (
       <div>
-      <Text
-        content="Hover to trigger"
-        className="flex items-center justify-center w-8 h-8 bg-gray-500 rounded-full"
-      />
+        <Text
+          content="Hover to trigger"
+          className="flex items-center justify-center w-8 h-8 bg-gray-500 rounded-full"
+        />
       </div>
     ),
     size: "xs",
@@ -66,10 +66,24 @@ export const LightVariant: StoryObj<TooltipProps> = {
   args: {
     variant: "light",
   },
+  parameters: {
+    docs: {
+      description: {
+        story: "Tooltip with light variant",
+      },
+    },
+  },
 };
 
 export const DarkVariant: StoryObj<TooltipProps> = {
   args: {
     variant: "dark",
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "Tooltip with dark variant",
+      },
+    },
   },
 };
