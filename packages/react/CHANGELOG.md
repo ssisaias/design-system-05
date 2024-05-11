@@ -1,5 +1,11 @@
 # @isaias-ui/react
 
+## 1.2.0
+
+### Minor Changes
+
+- Adds the Toast component
+
 ## 1.1.0
 
 ### Minor Changes

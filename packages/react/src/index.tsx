@@ -7,4 +7,5 @@ export * from "./components/Multistep";
 export * from "./components/TextArea";
 export * from "./components/Text";
 export * from "./components/TextInput";
+export * from "./components/Toast";
 export * from "./components/Tooltip";

@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 import { Text } from "./Text";
 import React, { ComponentProps } from "react";
 
-export interface ButtonProps {
+export interface ButtonProps extends ComponentProps<"button"> {
   disabled?: boolean;
   label: string;
   variant: "primary" | "secondary" | "tertiary";
@@ -25,8 +25,9 @@ export function Button(props: ButtonProps) {
   });
   return (
     <button
-      className={`${variant} ${size} rounded-sm text-sm font-medium font-default text-center min-w-[120px] box-border flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed focus:shadow-[0_0_0_2px] focus:text-gray-100`}
+      className={`${variant} ${size} box-border flex min-w-[120px] cursor-pointer items-center justify-center gap-2 rounded-sm text-center font-default text-sm font-medium focus:text-gray-100 focus:shadow-[0_0_0_2px] disabled:cursor-not-allowed`}
       disabled={props.disabled}
+      {...props}
     >
       {props.label}
     </button>
