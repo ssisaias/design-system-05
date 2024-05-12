@@ -1,5 +1,11 @@
 # @isaias-ui/react
 
+## 1.2.2
+
+### Patch Changes
+
+- Heading component: extends html props and pass className down
+
 ## 1.2.1
 
 ### Patch Changes
