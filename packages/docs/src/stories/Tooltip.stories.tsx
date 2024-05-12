@@ -1,47 +1,46 @@
-import type { StoryObj, Meta } from "@storybook/react";
-import { Text, Tooltip, TooltipProps } from "@isaias-ui/react";
+import type { StoryObj, Meta } from '@storybook/react';
+import { Text, Tooltip, TooltipProps } from '@isaias-ui/react';
 
 export default {
-  title: "Data Display/Tooltip",
+  title: 'Data Display/Tooltip',
   component: Tooltip,
   args: {
-    textContent: "Example",
+    textContent: 'Example',
     tooltipTrigger: (
       <div>
-        <Text
-          content="Hover to trigger"
-          className="flex items-center justify-center w-8 h-8 bg-gray-500 rounded-full"
-        />
+        <Text className="flex items-center justify-center w-8 h-8 bg-gray-500 rounded-full">
+          "Hover to trigger"
+        </Text>
       </div>
     ),
-    size: "xs",
-    variant: "dark",
+    size: 'xs',
+    variant: 'dark',
   },
   argTypes: {
     size: {
       options: [
-        "xxs",
-        "xs",
-        "sm",
-        "md",
-        "lg",
-        "xl",
-        "2xl",
-        "4xl",
-        "5xl",
-        "6xl",
-        "7xl",
-        "8xl",
-        "9xl",
+        'xxs',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        '2xl',
+        '4xl',
+        '5xl',
+        '6xl',
+        '7xl',
+        '8xl',
+        '9xl',
       ],
       control: {
-        type: "select",
+        type: 'select',
       },
     },
     variant: {
-      options: ["dark", "light"],
+      options: ['dark', 'light'],
       control: {
-        type: "select",
+        type: 'select',
       },
     },
     tooltipTrigger: {
@@ -54,7 +53,7 @@ export default {
     docs: {
       description: {
         story:
-          "A tooltip is a small pop-up window that appears when a user pauses the mouse pointer over an element, such as a Button or Icon. It provides additional information about that element.",
+          'A tooltip is a small pop-up window that appears when a user pauses the mouse pointer over an element, such as a Button or Icon. It provides additional information about that element.',
       },
     },
   },
@@ -64,12 +63,12 @@ export const Primary: StoryObj<TooltipProps> = {};
 
 export const LightVariant: StoryObj<TooltipProps> = {
   args: {
-    variant: "light",
+    variant: 'light',
   },
   parameters: {
     docs: {
       description: {
-        story: "Tooltip with light variant",
+        story: 'Tooltip with light variant',
       },
     },
   },
@@ -77,12 +76,12 @@ export const LightVariant: StoryObj<TooltipProps> = {
 
 export const DarkVariant: StoryObj<TooltipProps> = {
   args: {
-    variant: "dark",
+    variant: 'dark',
   },
   parameters: {
     docs: {
       description: {
-        story: "Tooltip with dark variant",
+        story: 'Tooltip with dark variant',
       },
     },
   },

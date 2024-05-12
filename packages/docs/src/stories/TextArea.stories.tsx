@@ -21,11 +21,11 @@ export const Disabled: StoryObj<TextAreaProps> = {
 
 export const InsideBox: StoryObj<TextAreaProps> = {
   args: {
-    prefix: "site.com/",
+    placeholder: "Type something...",
   },
   decorators: [(Story) => {
     return (
-      <Box as={'label'} content={"Observations"}>
+      <Box as={'div'} content={"Observations"}>
         {Story()}
       </Box>
     )
