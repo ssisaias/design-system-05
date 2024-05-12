@@ -3,7 +3,6 @@ import "../styles/twbuild.css";
 import { clsx } from "clsx";
 
 export interface TextProps {
-  content?: string;
   size?:
     | "xxs"
     | "xs"
@@ -20,6 +19,7 @@ export interface TextProps {
     | "9xl";
   as?: ElementType;
   className?: string;
+  children?: React.ReactNode;
 }
 
 export function Text(props: TextProps) {
@@ -44,13 +44,13 @@ export function Text(props: TextProps) {
         <props.as
           className={`${classSize} ${props.className} margin-0 font-default leading-base text-gray-100`}
         >
-          {props.content}
+          {props.children}
         </props.as>
       ) : (
         <p
           className={`${classSize} ${props.className} margin-0 font-default leading-base text-gray-100`}
         >
-          {props.content}
+          {props.children}
         </p>
       )}
     </>

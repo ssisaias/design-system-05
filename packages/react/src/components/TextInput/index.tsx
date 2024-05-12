@@ -15,7 +15,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
     });
     return (
       <div
-        className={`${size} align-center box-border flex rounded-sm border-2 border-solid border-gray-900 bg-gray-900
+        className={`${size} align-center box-border flex rounded-sm border-2 border-solid border-gray-900
       focus-within:border-ignite300
         has-[input:disabled]:cursor-not-allowed has-[input:disabled]:opacity-50 
       `}
@@ -29,7 +29,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
           type="text"
           {...props}
           ref={ref}
-          className="ont-default w-full border-none bg-transparent text-sm font-regular text-white placeholder-gray-400 placeholder:text-gray-400 focus:outline-0 disabled:cursor-not-allowed"
+          className="font-default w-full border-none bg-transparent text-sm font-regular text-white placeholder-gray-400 placeholder:text-gray-400 focus:outline-0 disabled:cursor-not-allowed focus:border-none"
         />
       </div>
     );

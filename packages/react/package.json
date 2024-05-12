@@ -1,6 +1,10 @@
 {
   "name": "@isaias-ui/react",
-  "version": "1.2.0",
+  "version": "1.3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssisaias/design-system-05/tree/main/packages/react"
+  },
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

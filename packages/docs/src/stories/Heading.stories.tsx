@@ -5,7 +5,7 @@ export default {
   title: "Typography/Heading",
   component: Heading,
   args: {
-    content:
+    children:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ratione aut voluptatem soluta eaque impedit accusamus amet, nostrum perspiciatis obcaecati, natus ex placeat quidem enim minus esse dolor! Voluptates, blanditiis",
     size: "md",
   },

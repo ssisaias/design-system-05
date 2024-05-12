@@ -660,10 +660,6 @@ video {
   overflow: hidden;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-\[4px\] {
   border-radius: 4px;
 }
@@ -696,6 +692,10 @@ video {
   border-width: 1px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -719,9 +719,13 @@ video {
   border-color: rgb(0 135 95 / var(--tw-border-opacity));
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+.border-transparent {
+  border-color: transparent;
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-gray-600 {
@@ -792,11 +796,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .px-\[15px\] {
@@ -891,10 +890,6 @@ video {
 
 .text-xxs {
   font-size: 0.625rem;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .font-medium {
@@ -1009,9 +1004,13 @@ body {
   border-width: 2px;
 }
 
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-gray-200:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1025,6 +1024,10 @@ body {
 
 .focus\:border-solid:focus {
   border-style: solid;
+}
+
+.focus\:border-none:focus {
+  border-style: none;
 }
 
 .focus\:border-ignite300:focus {
@@ -1071,6 +1074,11 @@ body {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.disabled\:border-gray-400:disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
 .disabled\:bg-gray-200:disabled {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1086,8 +1094,18 @@ body {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.disabled\:text-gray-400:disabled {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
+}
+
+.hover\:disabled\:border-gray-400:disabled:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .hover\:disabled\:bg-gray-200:disabled:hover {
