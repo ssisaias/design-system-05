@@ -1,5 +1,13 @@
 # @isaias-ui/react
 
+## 1.3.0
+
+### Minor Changes
+
+- Box/Heading/Text: Use children instead of content prop
+  Updates other components to pass children
+  Updates button tertiary variant design
+
 ## 1.2.3
 
 ### Patch Changes

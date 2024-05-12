@@ -10,10 +10,9 @@ export function Multistep({ size, currentStep = 1 }: MultistepProps) {
     <div>
       <Text
         as={"label"}
-        content={`Passo ${currentStep} de ${size}`}
         size="xs"
         className="text-gray-400"
-      />
+      >{`Passo ${currentStep} de ${size}`}</Text>
       <div id="steps" className={`mt-1 grid grid-flow-col gap-2`}>
         {Array.from({ length: size }, (_, i) => i + 1).map((step) => (
           <div

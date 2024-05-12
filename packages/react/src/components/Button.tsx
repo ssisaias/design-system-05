@@ -1,6 +1,5 @@
 import "../styles/twbuild.css";
 import { clsx } from "clsx";
-import { Text } from "./Text";
 import React, { ComponentProps } from "react";
 
 export interface ButtonProps extends ComponentProps<'button'> {
@@ -16,7 +15,7 @@ export function Button(props: ButtonProps) {
       !props.variant || props.variant === 'primary',
     'text-ignite300 bg-none border-2 border-solid border-ignite500 hover:enabled:bg-ignite500 hover:text-white disabled:border-gray-200 disabled:text-gray-200 hover:disabled:bg-gray-200 hover:disabled:text-gray-600':
       props.variant === 'secondary',
-    'text-gray-100 bg-none hover:enabled:text-white disabled:text-gray-200 disabled:border-gray-200 hover:border-2':
+    'text-gray-100 bg-none hover:enabled:text-white border-2 border-transparent disabled:text-gray-400 hover:disabled:border-gray-400 hover:border-gray-200':
       props.variant === 'tertiary',
   })
   const size = clsx({

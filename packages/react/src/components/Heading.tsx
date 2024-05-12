@@ -3,7 +3,6 @@ import "../styles/twbuild.css";
 import { clsx } from "clsx";
 
 export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
-  content: string;
   size?:
     | "md"
     | "lg"
@@ -16,6 +15,7 @@ export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
     | "8xl"
     | "9xl";
   as?: ElementType;
+  children?: React.ReactNode;
 }
 
 export function Heading(props: HeadingProps) {
@@ -37,13 +37,13 @@ export function Heading(props: HeadingProps) {
         <props.as
           className={`${props.className} ${classSize} margin-0 leading-shorter text-gray-100`}
         >
-          {props.content}
+          {props.children}
         </props.as>
       ) : (
         <h2
           className={`${props.className} ${classSize} margin-0 leading-shorter text-gray-100`}
         >
-          {props.content}
+          {props.children}
         </h2>
       )}
     </>
