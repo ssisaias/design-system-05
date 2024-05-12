@@ -1,6 +1,10 @@
 {
   "name": "@isaias-ui/tokens",
   "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssisaias/design-system-05/tree/main/packages/tokens"
+  },
   "description": "learnig project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

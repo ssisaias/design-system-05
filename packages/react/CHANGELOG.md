@@ -1,5 +1,17 @@
 # @isaias-ui/react
 
+## 1.2.2
+
+### Patch Changes
+
+- Heading component: extends html props and pass className down
+
+## 1.2.1
+
+### Patch Changes
+
+- Update the button component to receive child instead of a prop
+
 ## 1.2.0
 
 ### Minor Changes
