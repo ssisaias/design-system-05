@@ -1,5 +1,11 @@
 # @isaias-ui/react
 
+## 1.2.3
+
+### Patch Changes
+
+- minor fixes for text-input
+
 ## 1.2.2
 
 ### Patch Changes

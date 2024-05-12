@@ -1004,6 +1004,10 @@ body {
   border-style: solid;
 }
 
+.focus\:border-none:focus {
+  border-style: none;
+}
+
 .focus\:border-ignite300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 179 126 / var(--tw-border-opacity));
