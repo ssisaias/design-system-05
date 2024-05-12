@@ -10,10 +10,14 @@ export interface ToastProps {
 export function Toast({ message, description, theme }: ToastProps) {
   return (
     <>
-      <Button variant="secondary" size="md" content="Show Toast" label={"Show Toast"}
-      onClick={() => {
-        toast(message, { description });
-      }}>
+      <Button
+        variant="secondary"
+        size="md"
+        onClick={() => {
+          toast(message, { description });
+        }}
+      >
+        Show Toast
       </Button>
       <Toaster theme={theme} />
     </>
