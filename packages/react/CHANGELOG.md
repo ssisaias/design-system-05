@@ -1,5 +1,11 @@
 # @isaias-ui/react
 
+## 1.3.1
+
+### Patch Changes
+
+- patch
+
 ## 1.3.0
 
 ### Minor Changes

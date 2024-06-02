@@ -1,5 +1,11 @@
 # @isaias-ui/tokens
 
+## 1.1.4
+
+### Patch Changes
+
+- patch
+
 ## 1.1.3
 
 ### Patch Changes
