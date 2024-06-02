@@ -1,21 +1,18 @@
 {
   "name": "@isaias-ui/tokens",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/ssisaias/design-system-05/tree/main/packages/tokens"
   },
-  "description": "learnig project",
+  "description": "Base ui css (learnig project)",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./dist",
-      "node": "./dist",
-      "import": "./dist"
-    },
-    "./styles.css": "./dist/index.css"
+      "import": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify",
