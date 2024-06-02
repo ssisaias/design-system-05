@@ -1,5 +1,11 @@
 # @isaias-ui/tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- Try to patch imports
+
 ## 1.1.0
 
 ### Minor Changes
